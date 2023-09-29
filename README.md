@@ -1,0 +1,4 @@
+# memorability_modification
+
+This project harnesses the capabilities of an Attention-Guided Generative Adversarial Network (AGGAN) to modify the memorability of face images. (Tang, Hao & Xu, Dan & Sebe, Nicu & Yan, Yan. (2019). Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. )
+Initiating this project, we start by assigning memorability scores to images from the CelebA dataset. This is done using the ResMem model, trained on the 10K US Faces dataset that conveniently comes with pre-assigned memorability scores. Moving on, we train AGGAN to perform image-to-image translation on unpaired images, merging the transformed image with one from the target domain. It’s noteworthy that AGGAN is designed with the versatility to handle unpaired image datasets, enabling us to train using images that aren’t necessarily faces of the same individual.
